@@ -39,25 +39,27 @@ class _InBordingState extends State<InBording> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
-                      children: [
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
                         Text(
                           '7',
                           style: TextStyle(
                               color: Colors.amber,
-                              fontSize: 30,
-                              fontFamily: 'Arista Pro'),
+                              fontSize: 50,
+                             ),
                         ),
                         Text('krave', style: TextStyle(
                             color: Colors.teal,
-                            fontSize: 30,
-                            fontFamily: 'Arista Pro'),
+                            fontSize: 57,
+                            fontFamily: 'Arista Pro',),
+                          //textAlign: TextAlign.center,
                         )
                       ],
                     ),
+                    Center(child: RectangleIndecator(index:currentIndex),)
                   ],
                 ),
               ),
-              Center(child: RectangleIndecator(index:currentIndex),)
             ],
           ),
         ),
