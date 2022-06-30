@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class RectangleIndecator extends StatelessWidget {
+class RectangleIndicator extends StatelessWidget {
 
   final int index ;
-  const RectangleIndecator({Key? key, required this.index}) : super(key: key);
+  const RectangleIndicator({Key? key, required this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        buildContainer(Colors.black12),
-        buildContainer(Colors.black12),
-        buildContainer(Colors.black12),
+        buildContainer(index==0?Colors.amber:Colors.black12),
+        buildContainer(index==1?Colors.amber:Colors.black12),
+        buildContainer(index==2?Colors.amber:Colors.black12),
 
       ],
     );
